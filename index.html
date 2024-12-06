@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto y Generador de QR</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Contacto</h1>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="qrcode" class="qrcode"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
